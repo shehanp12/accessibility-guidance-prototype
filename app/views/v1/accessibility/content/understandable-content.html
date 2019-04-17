@@ -1,0 +1,92 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v1">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v1/accessibility">Accessibility</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v1/images">Back to Accessibility</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <div class="nhsuk-page-heading">
+        <h1>
+          <span role="text">
+            Understandable content
+            <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+              <span class="nhsuk-u-visually-hidden">
+                -
+              </span>
+              Content design
+            </span>
+          </span>
+        </h1>
+      </div>
+
+      {{ contentsList({
+        items: [
+          {
+            href: "#",
+            text: "Understandable content",
+            current: "true"
+          },
+          {
+            href: "/v1/accessibility/content/alternative-text-for-images",
+            text: "Alternative text for images"
+          },
+          {
+            href: "#",
+            text: "Headings"
+          }
+          ,
+          {
+            href: "#",
+            text: "Data tables"
+          }
+          ,
+          {
+            href: "#",
+            text: "Colour and location"
+          },
+          {
+            href: "#",
+            text: "Defining link and control names"
+          },
+          {
+            href: "#",
+            text: "Error messages"
+          },
+          {
+            href: "#",
+            text: "Labels"
+          }
+        ]
+      }) }}
+
+      <p>Making the text content as easy to understand as possible is the most important aspect of the website, it will help more audiences than any other accessibility requirement.</p>
+
+      <p>NHS services should follow the <a href="">Content style guide</a> part of the service manual.</p>
+      
+      <div class="nhsuk-u-margin-top-8">
+        {{ pagination({
+          "nextUrl": "/v1/accessibility/content/alternative-text-for-images",
+          "nextPage": "Alternative text for images"
+        }) }}
+      </div>
+      
+    </div>  
+
+  </div>
+{% endblock %}

@@ -1,0 +1,174 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v2">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v2/accessibility">Accessibility</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v2/images">Back to Accessibility</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>Content design</h2>
+
+      <p>In this guide:</p>
+      <ul>
+        <li><a href="#">Understandable content</a></li>
+        <li><a href="#">Alternative text for images</a></li>
+        <li><a href="#">Headings</a></li>
+        <li><a href="#">Data tables</a></li>
+        <li><a href="#">Colour and location</a></li>
+        <li><a href="#">Defining link and control names</a></li>
+        <li><a href="#">Error messages</a></li>
+        <li><a href="#">Labels</a></li>
+      </ul>
+
+
+      <h2 class="nhsuk-u-margin-top-8">Understandable content</h2>
+
+      <p>Making the text content as easy to understand as possible is the most important aspect of the website, it will help more audiences than any other accessibility requirement.</p>
+
+      <p>NHS services should follow the <a href="">Content style guide</a> part of the service manual.</p>
+
+      <a href="">Back to top</a>
+      <hr>
+
+
+      <h2>Alternative text for images</h2>
+
+      <p>For people who cannot see an image, having an alternative is vital to understand the content.</p>
+
+      <p>In web pages "alt text" is required for each image. The content of the alt text depends on the image type and context. For images that are part of the main content area of a page they should describe the image in a way that is meaningful in context.</p>
+
+      <p>Imagine you were reading the page out to a friend; how would you describe the image?</p>
+    
+      <div class="nhsuk-u-margin-top-8">
+        {{ image({
+          "src": "https://via.placeholder.com/300x150",
+          "alt": "Placeholder image",
+          "caption": "Caption"
+        }) }}
+      </div>
+
+      <p>The caption underneath the image can assume you understand the image, either by seeing it or reading the alt text.</p>
+
+      <a href="">Back to top</a>
+      <hr>
+
+
+      <h2 class="nhsuk-u-margin-top-8">Headings</h2>
+
+      <p>Headings provide descriptions of content, and for some people they provide an effective method of navigating the page.</p>
+
+      <p>The main heading of the page is added by the [title field in wagtail].</p>
+
+      <p>Each section of the page should start with a #H2, and each sub-section should start with a #H3. It is possible to provide sub-sub-sections with a #H4.</p>
+
+      <p>The question for each heading is whether it is a sub-section of the previous heading. If not, it should be at the same level as (or higher than) the previous section.</p>
+
+      <p>The size and style of text is not the deciding factor about heading level, the structure of the page is the key factor.</p>
+
+      <p>For more examples, see the [headings pattern].</p>
+
+      <div class="nhsuk-u-margin-top-8">
+        {{ image({
+          "src": "https://via.placeholder.com/300x150",
+          "alt": "Placeholder image",
+          "caption": "Caption"
+        }) }}
+      </div>
+
+
+      <h2 class="nhsuk-u-margin-top-8">Data tables</h2>
+      
+      <p>Tables should only be used if there is a relationship between the "header" cells, and the "data" cells.</p>
+
+      <p>Assistive technology makes use of the relationship to announce the header before each cell and provide column and row information.</p>
+
+      <div class="nhsuk-u-margin-top-8">
+        {{ image({
+          "src": "https://via.placeholder.com/300x150",
+          "alt": "Placeholder image",
+          "caption": "Caption"
+        }) }}
+      </div>
+
+      <p>In the example data table, the last row would be read as: "Skin symptoms: Itchy blisters. Possible cause: shingles, chickenpox.", the headers and data are read out together.</p>
+
+      <p>It is important to only use tables where this type of relationship is required, otherwise it leads to confusing content.</p>
+
+      <a href="">Back to top</a>
+      <hr>
+
+
+      <h2 class="nhsuk-u-margin-top-8">Colour and location</h2>
+
+      <p>For people who cannot see a page or have converted it into a different format, the colour and location of page elements will change. Therefore providing instructions that rely on those aspects will be problematic.</p>
+
+      <p>For example, do not say "Press the red button on the right".</p>
+
+      <ul>
+        <li>For someone who is zoomed in, the button may not be on the right</li>
+        <li>For someone with colour blindness, the button may not be differentiated from a green button</li>
+        <li>For someone using a screenreader, the colour is not available and the location is simple up or down</li>
+      </ul>
+
+      <a href="">Back to top</a>
+      <hr>
+
+      <h2 class="nhsuk-u-margin-top-8">Defining link and control names</h2>
+
+      <p>Links needs to make sense out of context as some people experience them that way, so each link on a page should clearly describe where it will take you if you choose to follow it.</p>
+
+      <div class="nhsuk-u-margin-top-8">
+        {{ image({
+          "src": "https://via.placeholder.com/300x150",
+          "alt": "Placeholder image",
+          "caption": "Caption"
+        }) }}
+      </div>
+
+      <p>Ideally link text should match the heading of the target page. So if the target page of the link has a heading “Sleep and tiredness”, that would make good link text.</p>
+
+      <p>Also:</p>
+
+      <ul>
+        <li>-	Avoid ambiguous phrases such as “click here”, “read more” and “find out more”</li>
+        <li>If links open in a new window this information should be included in the link phrase (e.g. “Link name (opens in new window)”)</li>
+      </ul>
+
+      <p>Good examples:</p>
+
+      <p>[Add design example component]</p>
+      <p>[Add design example component]</p>
+
+
+      <h2>Setting page titles</h2>
+
+      <p>Each page title should be unique, descriptive and concise. It is the first thing read out to a screenreader when landing on a page, and the link shown in search results. In both cases a good page title helps when finding the page or switching between tabs.</p>
+
+      <p>For content managed pages the title is based on [the title field in Wagtail], and fits into a templated pattern.</p>
+
+      <p>Best practice is generally:<br>Page name | Section – Sitename</p>
+
+      <p>
+      
+
+
+      
+    </div>  
+
+  </div>
+{% endblock %}

@@ -1,0 +1,40 @@
+<!-- Extends the layout from /app/views/layouts/layout.html -->
+{% extends 'layouts/layout.html' %}
+
+<!-- Set the page title inside this block -->
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+<!-- Breadcrumb goes inside this block -->
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>
+        Accessibility guidance prototype
+      </h1>
+
+      <p>Versions:</p>
+
+      <h2><a href="/v1">v1</a></h2>
+      <ul>
+        <li>Mini-hub pattern, contents list, pagination</li>
+      </ul>
+
+      <h2><a href="/v2">v2</a></h2>
+      <ul>
+        <li>Each activity guide in one page with anchor links</li>
+      </ul>
+
+      <h2><a href="/v3">v3</a></h2>
+      <ul>
+        <li>Checkboxes</li>
+      </ul>
+
+    </div>
+  </div>
+{% endblock %}

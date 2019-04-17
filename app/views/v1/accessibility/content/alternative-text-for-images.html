@@ -1,0 +1,109 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v1">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v1/accessibility">Accessibility</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v1/images">Back to Accessibility</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <div class="nhsuk-page-heading">
+        <h1>
+          <span role="text">
+            Alternative text for images
+            <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+              <span class="nhsuk-u-visually-hidden">
+                -
+              </span>
+              Content design
+            </span>
+          </span>
+        </h1>
+      </div>
+
+      {{ contentsList({
+        items: [
+          {
+            href: "/v1/accessibility/content/understandable-content",
+            text: "Understandable content"
+          },
+          {
+            href: "/v1/accessibility/content/alternative-text-for-images",
+            text: "Alternative text for images",
+            current: "true"
+          },
+          {
+            href: "#",
+            text: "Headings"
+          }
+          ,
+          {
+            href: "#",
+            text: "Data tables"
+          }
+          ,
+          {
+            href: "#",
+            text: "Colour and location"
+          },
+          {
+            href: "#",
+            text: "Defining link and control names"
+          },
+          {
+            href: "#",
+            text: "Error messages"
+          },
+          {
+            href: "#",
+            text: "Labels"
+          }
+        ]
+      }) }}
+
+      <p>For people who cannot see an image, having an alternative is vital to understand the content.</p>
+
+      <p>In web pages "alt text" is required for each image. The content of the alt text depends on the image type and context. For images that are part of the main content area of a page they should describe the image in a way that is meaningful in context.</p>
+
+      <p>Imagine you were reading the page out to a friend; how would you describe the image?</p>
+    
+      <div class="nhsuk-u-margin-top-8">
+        {{ image({
+          "src": "https://via.placeholder.com/300x150",
+          "alt": "Placeholder image",
+          "caption": "Caption"
+        }) }}
+      </div>
+
+      <p>The caption underneath the image can assume you understand the image, either by seeing it or reading the alt text.</p>
+
+      
+      <div class="nhsuk-u-margin-top-8">
+        {{ pagination({
+          "previousUrl": "/v1/accessibility/content/understandable-content",
+          "previousPage": "Understandable content",
+          "nextUrl": "#",
+          "nextPage": "Headings"
+        }) }}
+      </div>
+      
+      
+
+    </div>  
+
+  </div>
+{% endblock %}

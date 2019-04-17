@@ -1,0 +1,238 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v2">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v2/accessibility">Accessibility</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v2/images">Back to Accessibility</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>Frontend development</h1>
+
+      <p>In this guide:</p>
+      <ul>
+        <li><a href="#">Ensure keyboard accessibility</a></li>
+        <li><a href="#">Test zooming and text sizing</a></li>
+        <li><a href="#">ARIA patterns</a></li>
+        <li><a href="#">Alternative text</a></li>
+        <li><a href="#">Multimedia</a></li>
+        <li><a href="#">Setting page titles</a></li>
+        <li><a href="#">Setting the (human) language of the content</a></li>
+      </ul>
+
+      <h2 class="nhsuk-u-margin-top-8">Ensure keyboard accessibility</h2>
+
+      <p>Keyboard accessibility is a fundamental part of enabling various input methods, including switches, speech input, and screen readers.</p>
+
+      <h3 class="nhsuk-u-margin-top-6">How to test with a keyboard:</h3>
+      <ul>
+        <li>tab key to progress through links and controls</li>
+        <li>shift-tab to reverse</li>
+        <li>enter to follow links</li>
+        <li>space to select form controls (e.g. tick boxes)</li>
+        <li>arrows for radio-buttons / tabs.</li>
+      </ul>
+      
+      <h3 class="nhsuk-u-margin-top-6">For each page, check:</h3>
+
+      <div class="nhsuk-checkboxes nhsuk-u-margin-top-6">
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
+            All links, buttons and form controls can be tabbed to
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="phone">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
+            Non-functional elements (e.g. headings & paragraphs) cannot be tabbed to
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+            You can see where the focus is easily (link to graphic design)
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
+            The focus does not move to hidden elements
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="phone">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
+            The focus does not get trapped in an element
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+            Scripted events (for keyboard/mouse/touch) only fire when expected
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+            The visual order for tabbing progress should be left-to-right, top-to-bottom
+          </label>
+        </div>
+
+      </div>
+
+      <div class="nhsuk-u-margin-top-8">
+        {{ image({
+          "src": "https://via.placeholder.com/300x150",
+          "alt": "Placeholder image",
+          "caption": "Caption"
+        }) }}
+      </div>
+
+      <a href="">Back to top</a>
+      <hr>
+
+
+      <h2 class="nhsuk-u-margin-top-8">Test zooming and text sizing</h2>
+
+      <p>People use their browser to change the size of content, and people with low vision may use that to a more extreme level, the guidelines specify a level of 320 (CSS) px wide. That is equivalent to 400% for a 1280px wide browser.</p>
+
+      <p>Users can also over-ride the font-family and spacing for text, which can break a fragile layout. The guidelines specify some values to test with, and we use a bookmarklet to do so.</p>
+
+      <p>NHS UK must use a responsive design which helps with zooming, and take care with layouts that limit text-expansion.</p>
+
+      
+      <h3 class="nhsuk-u-margin-top-6">Test zoom and text spacing on a page by:</h3>
+
+      <div class="nhsuk-checkboxes nhsuk-u-margin-top-6">
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
+            Checking what content & functionality is available
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="phone">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
+            Size your browser window to 1280px wide (you can use the web developer toolbar in Firefox or Chrome)
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+            Zoom into 400% (Firefox needs a tweak to achieve this)
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
+            Check that all the content & functionality is still available (even if it involves opening show/hide elements, or clicking through to another page)
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="phone">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
+            Activate the text-spacing bookmarklet
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+            Check for missing or over-lapping content, and that there is no horizontal scrolling
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+            Gradually zoom-out to 100%, checking the text-spacing at each stage
+          </label>
+        </div>
+
+      </div>
+
+      <div class="nhsuk-u-margin-top-8">
+        {{ image({
+          "src": "https://via.placeholder.com/300x150",
+          "alt": "Placeholder image",
+          "caption": "Caption"
+        }) }}
+      </div>
+
+      <a href="">Back to top</a>
+      <hr>
+
+      <h2 class="nhsuk-u-margin-top-8">Alternative text</h2>
+
+      <p>Alternatives for images (and other non-text content) are critical for people who cannot see the page.</p>
+
+      <p>[WIP]</p>
+
+      <a href="">Back to top</a>
+      <hr>
+
+
+      <h2 class="nhsuk-u-margin-top-8">Multimedia</h2>
+      <p>[Work in progress]</p>
+
+      <a href="">Back to top</a>
+      <hr>
+
+      <h2 class="nhsuk-u-margin-top-8">Setting page titles</h2>
+      <p>Each page title should be unique and descriptive, so for non-content managed pages those titles need to be defined. For content managed pages the template should help/enforce the agreed pattern.</p>
+
+      <p>Best practice is generally: Page name | Section – Sitename</p>
+      <p>For example: Achalasia | Health A-Z - NHS</p>
+
+      <p>The main tittle of the page should match the start of the page title.</p>
+
+      <a href="">Back to top</a>
+      <hr>
+
+      <h2 class="nhsuk-u-margin-top-8">Setting the (human) language of the content</h2>
+      
+      <p>In order for screenreaders (and search engines) to know what language the page is a small bit of markup is needed in each page.</p>
+
+      <p>In the HTML element the language can be set to English for the whole page: [add code component] html lang="en"</code></p>
+
+      <p>Where there are changes of language within the page, these should be marked up as well:</p>
+
+      <p>[Add code component] You can search for health professionals for the area you are staying in via <a href=”…” lang=”fr”>l’Assurance Maladie</a> website (information in French only).</p>
+
+      <p>The lang attribute can be applied to any container.</p>
+
+
+      <a href="">Back to top</a>
+      <hr>
+      
+    </div>  
+
+  </div>
+{% endblock %}

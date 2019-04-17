@@ -1,0 +1,58 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <h1>Accessibility</h1>
+			<p class="nhsuk-body-l">How to make your service work for everyone.</p>
+
+				<div class="nhsuk-grid-row nhsuk-u-margin-top-8">
+
+				<div class="nhsuk-grid-column-full">
+						<h2 class="nhsuk-heading-m">Getting started</h2>	
+					</div>
+					<div class="nhsuk-grid-column-one-third">
+						<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/v1/images/styles">Policy</a></h2>
+						<p>What all services and products at the NHS need to do when it comes to accessibility.</p>
+					</div>
+					<div class="nhsuk-grid-column-one-third">
+						<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/v1/images/inclusive">Learn about accessibility</a></h2>
+						<p>Where to start and useful resources to expand your knowledge.</p>
+					</div>
+				</div>
+
+				<div class="nhsuk-grid-row nhsuk-u-margin-top-6">
+
+					<div class="nhsuk-grid-column-full">
+						<h2 class="nhsuk-heading-m">Activity guides</h2>	
+						<p>Summary paragraph here.</h2>
+
+						<ul class="nhsuk-list nhsuk-list-links">
+							<li><a href="">Product and delivery management</a></li>
+							<li><a href="">User research</a></li>
+							<li><a href="/v1/accessibility/content/understandable-content">Content design</a></li>
+							<li><a href="">Graphic and interaction design</a></li>
+							<li><a href="/v1/accessibility/frontend/ensure-keyboard-accessibility">Frontend development</a></li>
+							<li><a href="">Quality and assurance testing</a></li>
+						</ul>	
+					</div>
+
+					
+
+    </div>  
+
+  </div>
+{% endblock %}

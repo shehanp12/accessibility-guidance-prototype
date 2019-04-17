@@ -1,0 +1,112 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v1">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v1/accessibility">Accessibility</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v1/images">Back to Accessibility</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+   <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-page-heading">
+        <h1>Activity guide</h1>
+        <p class="nhsuk-body-l">What you need to do to ensure your service is accessible.</p>
+      </div>
+    
+    </div>
+
+  </div>
+
+
+  <div class="nhsuk-grid-row nhsuk-u-margin-top-6">
+
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s">Roles</h2>
+    <div class="nhsuk-checkboxes">
+
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input management-checkbox" id="filters-1" name="management-checkbox" type="checkbox" value="email">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="filters-1">
+          Management
+        </label>
+      </div>
+
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input research-checkbox" id="filters-2" name="role" type="checkbox" value="phone">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="filters-2">
+          User research
+        </label>
+      </div>
+
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input content-design-checkbox" id="filters-3" name="role" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="filters-3">
+          Content design
+        </label>
+      </div>
+
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input design-checkbox" id="filters-4" name="role" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="filters-4">
+          Graphic and interaction design
+        </label>
+      </div>
+
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input frontend-checkbox" id="filters-5" name="role" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="filters-5">
+          Front-end development
+        </label>
+      </div>
+
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input testing-checkbox" id="filters-6" name="role" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="filters-6">
+          Testing
+        </label>
+      </div>
+
+    </div>
+  </div>
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h2>11 things to consider</h2>
+      
+      <div class="nhsuk-u-margin-top-4">
+        {% include "../accessibility/activity-guides/responsibilities.html" %}
+
+        {% include "../accessibility/activity-guides/include-people-with-disabilities.html" %}
+
+        {% include "../accessibility/activity-guides/understandable-content.html" %}
+        {% include "../accessibility/activity-guides/alternative-text-for-images.html" %}
+        {% include "../accessibility/activity-guides/headings.html" %}
+        {% include "../accessibility/activity-guides/data-tables.html" %}
+        {% include "../accessibility/activity-guides/colour-and-location.html" %}
+        {% include "../accessibility/activity-guides/defining-link-and-control-names.html" %}
+        {% include "../accessibility/activity-guides/setting-page-titles.html" %}
+
+        {% include "../accessibility/activity-guides/ensure-keyboard-accessibility.html" %}
+        {% include "../accessibility/activity-guides/test-zooming-and-text-sizing.html" %}
+      </div>
+    
+    </div>  
+
+  </div>
+{% endblock %}

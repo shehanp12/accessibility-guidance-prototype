@@ -1,0 +1,158 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v1">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v1/accessibility">Accessibility</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v1/images">Back to Accessibility</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <div class="nhsuk-page-heading">
+        <h1>
+          <span role="text">
+            Ensure keyboard accessibility
+            <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+              <span class="nhsuk-u-visually-hidden">
+                -
+              </span>
+              Frontend development
+            </span>
+          </span>
+        </h1>
+      </div>
+
+      {{ contentsList({
+        items: [
+          {
+            href: "#",
+            text: "Ensure keyboard accessibility",
+            current: "true"
+          },
+          {
+            href: "/v1/accessibility/frontend/test-zooming-and-text-sizing",
+            text: "Test zooming and text sizing"
+          },
+          {
+            href: "#",
+            text: "ARIA patterns"
+          }
+          ,
+          {
+            href: "#",
+            text: "Alternative text "
+          }
+          ,
+          {
+            href: "#",
+            text: "Multimedia"
+          },
+          {
+            href: "#",
+            text: "Setting page titles"
+          },
+          {
+            href: "#",
+            text: "Setting the (human) language of the content"
+          }
+        ]
+      }) }}
+
+      <p>Keyboard accessibility is a fundamental part of enabling various input methods, including switches, speech input, and screen readers.</p>
+
+      <h3 class="nhsuk-u-margin-top-6">How to test with a keyboard:</h3>
+      <ul>
+        <li>tab key to progress through links and controls</li>
+        <li>shift-tab to reverse</li>
+        <li>enter to follow links</li>
+        <li>space to select form controls (e.g. tick boxes)</li>
+        <li>arrows for radio-buttons / tabs.</li>
+      </ul>
+      
+      <h3 class="nhsuk-u-margin-top-6">For each page, check:</h3>
+
+      <div class="nhsuk-checkboxes nhsuk-u-margin-top-6">
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
+            All links, buttons and form controls can be tabbed to
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="phone">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
+            Non-functional elements (e.g. headings & paragraphs) cannot be tabbed to
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+            You can see where the focus is easily (link to graphic design)
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
+            The focus does not move to hidden elements
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="phone">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
+            The focus does not get trapped in an element
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+            Scripted events (for keyboard/mouse/touch) only fire when expected
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+            The visual order for tabbing progress should be left-to-right, top-to-bottom
+          </label>
+        </div>
+
+      </div>
+
+      <div class="nhsuk-u-margin-top-8">
+        {{ image({
+          "src": "https://via.placeholder.com/300x150",
+          "alt": "Placeholder image",
+          "caption": "Caption"
+        }) }}
+      </div>
+      
+      <div class="nhsuk-u-margin-top-8">
+        {{ pagination({
+          "nextUrl": "/v1/accessibility/frontend/test-zooming-and-text-sizing",
+          "nextPage": "Text zooming and text sizing"
+        }) }}
+      </div>
+      
+    </div>  
+
+  </div>
+{% endblock %}

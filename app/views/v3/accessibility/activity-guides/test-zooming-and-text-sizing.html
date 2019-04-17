@@ -1,0 +1,81 @@
+<div class="frontend testing">
+
+  <h4 class="nhsuk-u-margin-top-8">Test zooming and text sizing</h4>
+
+  <p>People use their browser to change the size of content, and people with low vision may use that to a more extreme level, the guidelines specify a level of 320 (CSS) px wide. That is equivalent to 400% for a 1280px wide browser.</p>
+
+  <p>Users can also over-ride the font-family and spacing for text, which can break a fragile layout. The guidelines specify some values to test with, and we use a bookmarklet to do so.</p>
+
+  <p>NHS services must use a responsive design which helps with zooming, and take care with layouts that limit text-expansion.</p>
+
+
+    <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+            How to test zooming and text sizing
+            </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <div class="nhsuk-checkboxes nhsuk-u-margin-top-6">
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
+                Checking what content & functionality is available
+              </label>
+            </div>
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="phone">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
+                Size your browser window to 1280px wide (you can use the web developer toolbar in Firefox or Chrome)
+              </label>
+            </div>
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+                Zoom into 400% (Firefox needs a tweak to achieve this)
+              </label>
+            </div>
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
+                Check that all the content & functionality is still available (even if it involves opening show/hide elements, or clicking through to another page)
+              </label>
+            </div>
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="phone">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
+                Activate the text-spacing bookmarklet
+              </label>
+            </div>
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+                Check for missing or over-lapping content, and that there is no horizontal scrolling
+              </label>
+            </div>
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+                Gradually zoom-out to 100%, checking the text-spacing at each stage
+              </label>
+            </div>
+
+          </div>
+
+          <div class="nhsuk-u-margin-top-8">
+            {{ image({
+              "src": "https://via.placeholder.com/300x150",
+              "alt": "Placeholder image",
+              "caption": "Caption"
+            }) }}
+          </div>
+        </div>
+    </details>
+

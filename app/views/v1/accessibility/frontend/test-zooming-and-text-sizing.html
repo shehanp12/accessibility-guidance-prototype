@@ -1,0 +1,159 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v1">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v1/accessibility">Accessibility</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v1/images">Back to Accessibility</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <div class="nhsuk-page-heading">
+        <h1>
+          <span role="text">
+            Test zooming and text sizing
+            <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+              <span class="nhsuk-u-visually-hidden">
+                -
+              </span>
+              Frontend development
+            </span>
+          </span>
+        </h1>
+      </div>
+
+      {{ contentsList({
+        items: [
+          {
+            href: "/v1/accessibility/frontend/ensure-keyboard-accessibility",
+            text: "Ensure keyboard accessibility"
+          },
+          {
+            href: "#",
+            text: "Test zooming and text sizing",
+            current: "true"
+          },
+          {
+            href: "#",
+            text: "ARIA patterns"
+          }
+          ,
+          {
+            href: "#",
+            text: "Alternative text "
+          }
+          ,
+          {
+            href: "#",
+            text: "Multimedia"
+          },
+          {
+            href: "#",
+            text: "Setting page titles"
+          },
+          {
+            href: "#",
+            text: "Setting the (human) language of the content"
+          }
+        ]
+      }) }}
+
+      <h2 class="nhsuk-u-margin-top-8">How people change zoom and text sizes</h2>
+      <p>People use their browser to change the size of content, and people with low vision may use that to a more extreme level, the guidelines specify a level of 320 (CSS) px wide. That is equivalent to 400% for a 1280px wide browser.</p>
+
+      <p>Users can also over-ride the font-family and spacing for text, which can break a fragile layout. The guidelines specify some values to test with, and we use a bookmarklet to do so.</p>
+
+      <p>NHS UK must use a responsive design which helps with zooming, and take care with layouts that limit text-expansion.</p>
+
+      
+      <h3 class="nhsuk-u-margin-top-6">Test zoom and text spacing on a page by:</h3>
+
+      <div class="nhsuk-checkboxes nhsuk-u-margin-top-6">
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
+            Checking what content & functionality is available
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="phone">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
+            Size your browser window to 1280px wide (you can use the web developer toolbar in Firefox or Chrome)
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+            Zoom into 400% (Firefox needs a tweak to achieve this)
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
+            Check that all the content & functionality is still available (even if it involves opening show/hide elements, or clicking through to another page)
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="phone">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
+            Activate the text-spacing bookmarklet
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+            Check for missing or over-lapping content, and that there is no horizontal scrolling
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+            Gradually zoom-out to 100%, checking the text-spacing at each stage
+          </label>
+        </div>
+
+      </div>
+
+      <div class="nhsuk-u-margin-top-8">
+        {{ image({
+          "src": "https://via.placeholder.com/300x150",
+          "alt": "Placeholder image",
+          "caption": "Caption"
+        }) }}
+      </div>
+      
+      <div class="nhsuk-u-margin-top-8">
+        {{ pagination({
+          "previousUrl": "/v1/accessibility/frontend/ensure-keyboard-accessibility",
+          "previousPage": "Ensure keyboard accessibility",
+          "nextUrl": "#",
+          "nextPage": "ARIA patterns"
+        }) }}
+      </div>
+      
+      
+
+    </div>  
+
+  </div>
+{% endblock %}
