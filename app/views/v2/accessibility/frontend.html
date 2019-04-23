@@ -1,0 +1,51 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v2">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v2/accessibility">Accessibility</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v2/accessibility">Back to Accessibility</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>Front-end development</h2>
+
+      <p>In this section:</p>
+      <ul>
+        <li><a href="#setting-page-titles">Setting page titles</a></li>
+        <li><a href="#define-colour-contrast">Define colour contrast</a></li>
+        <li><a href="#ensure-keyboard-accessibility">Ensure keyboard accessibility</a></li>
+        <li><a href="#test-zooming-and-text-sizing">Test zooming and text sizing</a></li>
+        <li><a href="#aria-patterns">Aria patterns</a></li>
+        <li><a href="#setting-language-of-the-content">Setting the language of content</a></li>
+      </ul>
+
+      <div class="nhsuk-u-margin-top-4">
+        {% include "activity-guide-chunks/setting-page-titles.html" %}
+        {% include "activity-guide-chunks/define-colour-contrast.html" %}
+        {% include "activity-guide-chunks/ensure-keyboard-accessibility.html" %}
+        {% include "activity-guide-chunks/test-zooming-and-text-sizing.html" %}
+        {% include "activity-guide-chunks/aria.html" %}
+        {% include "activity-guide-chunks/setting-language-of-the-content.html" %}
+      </div>
+
+
+
+      
+    </div>  
+
+  </div>
+{% endblock %}

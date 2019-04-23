@@ -1,0 +1,46 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v2">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v2/accessibility">Accessibility</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v2/accessibility">Back to Accessibility</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>Management</h2>
+
+      <p>In this section:</p>
+      <ul>
+        <li><a href="#make-sure-everyone-knows-their-responsibilities">Make sure everyone knows their responsibilities</a></li>
+        <li><a href="#starting-new-project">Key questions for new projects</a></li>
+        <li><a href="#accessibility-part-of-done">Accessibility is part of done</a></li>
+
+      </ul>
+
+      <div class="nhsuk-u-margin-top-4">
+        {% include "activity-guide-chunks/responsibilities.html" %}
+        {% include "activity-guide-chunks/starting-new-project.html" %}
+        {% include "activity-guide-chunks/accessibility-part-of-done.html" %}
+      </div>
+
+
+
+      
+    </div>  
+
+  </div>
+{% endblock %}
