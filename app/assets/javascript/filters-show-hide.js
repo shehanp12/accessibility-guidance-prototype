@@ -26,7 +26,7 @@ $(function () {
             $(".content").hide();
         }
     });
-    $(".desing-checkbox").click(function() {
+    $(".design-checkbox").click(function() {
         if($(this).is(":checked")) {
             $(".design").show();
         } else {
