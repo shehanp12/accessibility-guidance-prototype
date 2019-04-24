@@ -1,36 +1,43 @@
-<div class="content">
+<div class="chunk-card content">
 
-    <h4 id="alternative-text-for-images" class="nhsuk-u-margin-top-8">Alternative text for images</h4>
+    <h3 id="alternative-text-for-images">Alternative text for images</h3>
 
-    <p>For people who cannot see an image, having an alternative is vital to understand the content.</p>
+    <div class="role-label role-content">
+        Content
+    </div>
 
-    <p>In web pages "alt text" is required for each image.</p>
+    <div class="chunk-content">
 
-    <details class="nhsuk-details">
-    <summary class="nhsuk-details__summary">
-        <span class="nhsuk-details__summary-text">
-        How to write alt text
-        </span>
-    </summary>
-    <div class="nhsuk-details__text">
+        <p>For people who cannot see an image, having an alternative is vital to understand the content.</p>
 
-        The content of the alt text depends on the image type and context. For images that are part of the main content area of a page they should describe the image in a way that is meaningful in context.</p>
+        <p>In web pages "alt text" is required for each image.</p>
 
-        <p>Imagine you were reading the page out to a friend; how would you describe the image?</p>
+        <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+            How to write alt text
+            </span>
+        </summary>
+        <div class="nhsuk-details__text">
 
-        <div class="nhsuk-u-margin-top-8">
-        {{ image({
-            "src": "https://via.placeholder.com/300x150",
-            "alt": "Placeholder image",
-            "caption": "Caption"
-        }) }}
-        </div>
+            The content of the alt text depends on the image type and context. For images that are part of the main content area of a page they should describe the image in a way that is meaningful in context.</p>
 
-        <p>The caption underneath the image can assume you understand the image, either by seeing it or reading the alt text.</p>
+            <p>Imagine you were reading the page out to a friend; how would you describe the image?</p>
 
-        </div>
-        
-    </details>
+            <div class="nhsuk-u-margin-top-8">
+            {{ image({
+                "src": "https://via.placeholder.com/300x150",
+                "alt": "Placeholder image",
+                "caption": "Caption"
+            }) }}
+            </div>
+
+            <p>The caption underneath the image can assume you understand the image, either by seeing it or reading the alt text.</p>
+
+            </div>
+            
+        </details>
     
-    <hr>
+    </div>
+
 </div>

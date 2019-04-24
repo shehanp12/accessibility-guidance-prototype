@@ -1,44 +1,50 @@
-<div class="design">
+<div class="chunk-card design">
 
-    <h4 id="define-html-structure-layout-and-content" class="nhsuk-u-margin-top-8">Define the HTML structure for layout and content</h4>
+    <h4 id="define-html-structure-layout-and-content">Define the HTML structure for layout and content</h4>
 
-    <p>Where a new layout is created it needs to have landmarks defined. The content areas need the headings, lists and data tables defined. These will not necessarily be used as-provided by the developers, but it starts the conversation and helps to prevent inconsistent templates.</p>
+    <div class="role-label role-design">
+        Design
+    </div>
 
-    <details class="nhsuk-details">
-        <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text">
-            How to use landmarks and headings
-            </span>
-        </summary>
-        <div class="nhsuk-details__text">
-            <h5>Landmarks</h5>
-            <p>Landmarks are hidden labels for sections of the page which help users of assistive technology to navigate within a page and build a mental picture of the page structure.</p>
+    <div class="chunk-content">
+        <p>Where a new layout is created it needs to have landmarks defined. The content areas need the headings, lists and data tables defined. These will not necessarily be used as-provided by the developers, but it starts the conversation and helps to prevent inconsistent templates.</p>
 
-            <p>When creating a new layout Define ARIA landmarks to identify regions of a page. It is also a means of allowing users to easily skip over repetitive sections across multiple pages.</p>
+        <details class="nhsuk-details">
+            <summary class="nhsuk-details__summary">
+                <span class="nhsuk-details__summary-text">
+                How to use landmarks and headings
+                </span>
+            </summary>
+            <div class="nhsuk-details__text">
+                <h5>Landmarks</h5>
+                <p>Landmarks are hidden labels for sections of the page which help users of assistive technology to navigate within a page and build a mental picture of the page structure.</p>
 
-            <ul>
-                <li>Banner: Located at the top of the page, usually contains the logo.</li>
-                <li>Navigation – Navigation elements that go to other pages, usually located inside the banner.</li>
-                <li>Search – The search field, usually located inside the banner.</li>
-                <li>Main – Contains the main content of the page, it should be unique on each page.</li>
-                <li>ContentInfo – The footer, this is shared across pages.</li>
-            </ul>
+                <p>When creating a new layout Define ARIA landmarks to identify regions of a page. It is also a means of allowing users to easily skip over repetitive sections across multiple pages.</p>
 
-            <div class="nhsuk-u-margin-top-8">
-            {{ image({
-                "src": "https://via.placeholder.com/300x150",
-                "alt": "Placeholder image",
-                "caption": "Caption"
-            }) }}
+                <ul>
+                    <li>Banner: Located at the top of the page, usually contains the logo.</li>
+                    <li>Navigation – Navigation elements that go to other pages, usually located inside the banner.</li>
+                    <li>Search – The search field, usually located inside the banner.</li>
+                    <li>Main – Contains the main content of the page, it should be unique on each page.</li>
+                    <li>ContentInfo – The footer, this is shared across pages.</li>
+                </ul>
 
-            <h5>Headings</h5>
-            <p>Where headings are used around the layout of the page, the levels of those headings needs to be considered and defined.</p>
+                <div class="nhsuk-u-margin-top-8">
+                {{ image({
+                    "src": "https://via.placeholder.com/300x150",
+                    "alt": "Placeholder image",
+                    "caption": "Caption"
+                }) }}
 
-            <p>Headings are labels for the content of a page (more granular than landmarks), and should title the content that follows them.</p>
+                <h5>Headings</h5>
+                <p>Where headings are used around the layout of the page, the levels of those headings needs to be considered and defined.</p>
+
+                <p>Headings are labels for the content of a page (more granular than landmarks), and should title the content that follows them.</p>
 
 
+                </div>
             </div>
-        </div>
-    </details>
-    <hr>
+        </details>
+    </div>
+    
 </div>

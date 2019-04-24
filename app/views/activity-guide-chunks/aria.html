@@ -1,38 +1,47 @@
-<div class="frontend testing">
+<div class="chunk-card frontend testing">
 
-  <h4 id="aria-patterns" class="nhsuk-u-margin-top-8">ARIA patterns</h4>
+  <h3 id="aria-patterns">ARIA patterns</h3>
 
-  <p>Where components need more descriptions than HTML provides, it needs marking up with an ARIA (Accessibility Rich Internet Applications) pattern.</p>
+  <div class="role-label role-frontend">
+      Frontend
+  </div>
+  <div class="role-label role-testing">
+      Testing
+  </div>
 
-  <p>Simple examples of ARIA used already in the service manual are the <a href="#">Details</a>, <a href="#">Breadcrumbs</a> and <a href="#">Error messages</a>.</p>
+  <div class="chunk-content">
+    <p>Where components need more descriptions than HTML provides, it needs marking up with an ARIA (Accessibility Rich Internet Applications) pattern.</p>
 
-    <details class="nhsuk-details">
-        <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text">
-            How to use ARIA patterns
-            </span>
-        </summary>
-        <div class="nhsuk-details__text">
-        
-          <p>It is beyond the scope of the service manual to introduce all of ARIA, the W3C note <a href="#">Using ARIA in HTML</a> is a good starting point.</p>
+    <p>Simple examples of ARIA used already in the service manual are the <a href="#">Details</a>, <a href="#">Breadcrumbs</a> and <a href="#">Error messages</a>.</p>
 
-          <p>If you have a complex component, check whether it fits into a defined pattern from the ARIA Authoring practices. Patterns that might be useful are:</p>
+      <details class="nhsuk-details">
+          <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">
+              How to use ARIA patterns
+              </span>
+          </summary>
+          <div class="nhsuk-details__text">
+          
+            <p>It is beyond the scope of the service manual to introduce all of ARIA, the W3C note <a href="#">Using ARIA in HTML</a> is a good starting point.</p>
 
-          <ul>
-            <li><a href="#">Accordions</a></li>
-            <li><a href="#">Modal dialogues</a></li>
-            <li><a href="#">Sliders</a></li>
-            <li><a href="#">Tabs</a></li>
-          </ul>
+            <p>If you have a complex component, check whether it fits into a defined pattern from the ARIA Authoring practices. Patterns that might be useful are:</p>
 
-          <p>If you use an ARIA pattern you will need to include the ARIA attributes as prescribed, and you are taking responsibility for the keyboard interactions as part of the scripting.</p>
+            <ul>
+              <li><a href="#">Accordions</a></li>
+              <li><a href="#">Modal dialogues</a></li>
+              <li><a href="#">Sliders</a></li>
+              <li><a href="#">Tabs</a></li>
+            </ul>
 
-          <p>Using a complex pattern adds an overhead of testing, both from a technical point of view (does it work as expected with assistive technology), but also from a general usability point of view. You do need to have good evidence that there is a user-need that this component will fulfil.</p>
+            <p>If you use an ARIA pattern you will need to include the ARIA attributes as prescribed, and you are taking responsibility for the keyboard interactions as part of the scripting.</p>
 
-          <p><a href="">Our components</a> are well tested, start with those. Another useful resources accessible components is the <a href="#">Inclusive design patterns</a> collection.</p>
+            <p>Using a complex pattern adds an overhead of testing, both from a technical point of view (does it work as expected with assistive technology), but also from a general usability point of view. You do need to have good evidence that there is a user-need that this component will fulfil.</p>
 
-        </div>
-    </details>
+            <p><a href="">Our components</a> are well tested, start with those. Another useful resources accessible components is the <a href="#">Inclusive design patterns</a> collection.</p>
 
-    <hr>
+          </div>
+      </details>
+
+    </div>
+
 </div>
