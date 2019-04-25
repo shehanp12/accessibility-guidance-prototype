@@ -1,0 +1,70 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v3">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v3/accessibility">Accessibility</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v3/accessibility">Back to Accessibility</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>Accessibility policy</h1>
+      <p class="nhsuk-body-l nhsuk-u-margin-bottom-8">The NHS is for everyone, so everything we create must be accessible to everyone, considering
+      different needs and abilities.</p>
+
+      <h2>Policy</h2>
+      <p>Every digital product the NHS produces should be accessible to as many people as possible.</p>
+
+      <p>It is our policy that everything should meet WCAG 2.1 (or equivalent) as a baseline and be tested with people.</p>
+      
+      <p>Each person is expected to do basic accessibility checks as part of their work.</p>
+
+      <p>Each third-party contracted to contribute to the NHS must ensure their work meets the same standard.</p>
+
+      <h2>Why it's important</h2>
+      <p>In the UK, about 18% of people have a disability of some kind, and a third have temporary impairments like illness or an injury.</p>
+      <p>When you’re working on NHS services, think about how people with different needs might use what
+      you’re making.</p>
+      <p>For example, how would someone with dyslexia consume your content? Or how would someone with a broken arm interact on a mobile device?</p>
+      <p>Accessibility is also part of the law; if your service isn’t accessible to everyone who needs it, you may
+      be breaking the 2010 Equality Act.</p>
+      
+
+      <h2>Consider accessibility at every stage</h2>
+      <p>Think about how you are going to address accessibility at the beginning and at every stage of your project. It’s much harder to make a service accessible if it’s only addressed late on.<p>
+
+      <h2>Resources</h2>
+
+      <h3>Activity guides</h3>
+      <p>There are guides for different activities in the project process:</p>
+
+      <ul class="nhsuk-list nhsuk-list-links">
+        <li><a href="/v2/accessibility/management">Management</a></li>
+        <li><a href="/v2/accessibility/user-research">User research</a></li>
+        <li><a href="/v2/accessibility/content-design">Content design</a></li>
+        <li><a href="/v2/accessibility/design">Graphic and interaction design</a></li>
+        <li><a href="/v2/accessibility/frontend">Frontend development</a></li>
+        <li><a href="/v2/accessibility/testing">Testing</a></li>
+      </ul>	
+
+      <h3>Tested components and patterns</h3>
+      <p>An easy way to help you meet the accessibility requirements is to use the <a href="#">patterns and components</a> that have already been tested.</p>
+
+      
+    </div>  
+
+  </div>
+{% endblock %}
