@@ -1,0 +1,51 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>Accessibility</h1>
+			<p class="nhsuk-body-l">How to make your service works for everyone.</p>
+
+			<div class="nhsuk-grid-row nhsuk-u-margin-top-8">
+
+				<div class="nhsuk-grid-column-full">
+					<h2 class="nhsuk-heading-m">Getting started</h2>	
+
+					<h3 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/v4/accessibility/policy">Our policy</a></h3>
+					<p>What all services and products at the NHS need to aim for.</p>
+
+					<h2 class="nhsuk-heading-m nhsuk-u-margin-top-6">Activity guides</h2>
+					<p>What each role in a team needs to do and think about.</p>
+						<ul class="nhsuk-list nhsuk-list-links">
+						<li class="nhsuk-heading-s"><a href="/v4/accessibility/management">Management</a></li>
+						<li class="nhsuk-heading-s"><a href="/v4/accessibility/user-research">User research</a></li>
+						<li class="nhsuk-heading-s"><a href="/v4/accessibility/content-design">Content design</a></li>
+						<li class="nhsuk-heading-s"><a href="/v4/accessibility/design">Graphic and interaction design</a></li>
+						<li class="nhsuk-heading-s"><a href="/v4/accessibility/frontend">Frontend development</a></li>
+						<li class="nhsuk-heading-s"><a href="/v4/accessibility/testing">Testing</a></li>
+					</ul>		
+
+					<h2 class="nhsuk-heading-m nhsuk-u-margin-top-6">Get in touch</h2>
+					<p>Join us on the <a href="#">NHS digital service manual Slack workspace</a> or email the standards team at <a href=#">service-manual@nhs.net</a>.</p>
+
+				</div>
+
+			</div>
+
+    </div>  
+
+  </div>
+{% endblock %}

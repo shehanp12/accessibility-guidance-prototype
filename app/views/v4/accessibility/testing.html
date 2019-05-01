@@ -1,0 +1,62 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v4">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v4/accessibility">Accessibility</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v4/accessibility">Back to Accessibility</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <h1>Testing</h1>
+    <p class="nhsuk-body-l nhsuk-u-margin-bottom-8">Accessibility considerations if you are testing and assuring quality.</p>
+
+  </div>
+
+</div>
+
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <div class="nhsuk-u-margin-top-4">
+      {% include "activity-guide-chunks/setting-page-titles.html" %}
+      {% include "activity-guide-chunks/define-colour-contrast.html" %}
+      {% include "activity-guide-chunks/ensure-keyboard-accessibility.html" %}
+      {% include "activity-guide-chunks/test-zooming-and-text-sizing.html" %}
+      {% include "activity-guide-chunks/aria.html" %}
+      {% include "activity-guide-chunks/setting-language-of-the-content.html" %}
+      {% include "activity-guide-chunks/orientation-not-locked.html" %}
+      {% include "activity-guide-chunks/consistent-navigation.html" %}
+    </div>
+
+  </div>
+
+  <div class="nhsuk-grid-column-one-third">
+    <div class="app-u-border-top">
+      <h3>Activity guides</h3>
+      <ul class="nhsuk-list nhsuk-list-links">
+        <li><a href="/v4/accessibility/management">Management</a></li>
+        <li><a href="/v4/accessibility/user-research">Research</a></li>
+        <li><a href="/v4/accessibility/content-design">Content</a></li>
+        <li><a href="/v4/accessibility/design">Design</a></li>
+        <li><a href="/v4/accessibility/frontend">Frontend</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
