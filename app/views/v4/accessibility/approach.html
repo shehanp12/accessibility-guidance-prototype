@@ -1,0 +1,91 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v4">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v4/accessibility">Accessibility</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v4/accessibility">Back to Accessibility</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>Make your service accessible</h1>
+      <p class="nhsuk-body-l nhsuk-u-margin-bottom-7">How we go about accessibility and inclusion.</p>  
+
+    </div>
+
+  </div>
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h2>Consider accessibility at every stage</h2>
+      <p>Think about how you are going to address accessibility at the beginning and at every stage of your project.</p>
+      <p>It’s much harder to make a service accessible if it’s only addressed late on.</p>
+      <ul>
+        <li><a href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction#what-to-do-in-discovery">How to approach accessibility at different stages of a project</a> from the GOV.UK Service Manual</li>
+      </ul>
+
+      <h2>Make it the whole team’s responsibility</h2>
+      <p>Every member of the team should contribute to making your service inclusive.</p>
+      <p>You should all have a good understanding of accessibility and observe research with users with disabilities.</p>
+      <ul>
+        <li><a href="/service-manual/content/writing-for-accessibility">Writing for accessibility</a> in the NHS digital service manual</li>
+        <li>Guides to <a href="https://www.w3.org/WAI/tips/writing/">writing</a>, <a href="https://www.w3.org/WAI/tips/designing/">designing</a> and <a href="https://www.w3.org/WAI/tips/developing/">developing</a> for web accessibility from the Web Accessibility Initiative (WAI)</li>
+      </ul>
+
+      <h2>Research with users with disabilities</h2>
+      <p>Include users who have disabilities or use assistive technologies in every round of user research.</p>
+      <p>Consider cognitive and physical impairments, visual impairments, and temporary or permanent access needs.</p>
+      <ul>
+        <li><a href="https://www.gov.uk/service-manual/user-research/find-user-research-participants#including-participants-with-disabilities">How to recruit and research with users with disabilities</a> from the GOV.UK Service Manual</li>
+      </ul>
+
+      <h2>Use progressive enhancement</h2>
+      <p>[Placeholder paragraph here that touches on the need for all services to use progressive enhancement and not rely on Javascript].</p>
+      <ul>
+        <li><a href="https://www.gov.uk/service-manual/technology/using-progressive-enhancement">Using progressive enhancement</a> from the GOV.UK Service Manual</li>
+      </ul>
+
+
+      <h2>Get an accessibility audit</h2>
+      <p>[Placeholder paragraph here that briefly touches on why an accessibility audit is useful and important].</p>
+      <ul>
+        <li><a href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/getting-an-accessibility-audit">Getting an accessibility audit</a> from the GOV.UK Service Manual</li>
+      </ul>
+
+    </div>  
+
+    <div class="nhsuk-grid-column-one-third">
+      <div class="app-u-border-top">
+        <h2 class="nhsuk-heading-s">Accessibility</h2>
+        <ul class="nhsuk-list nhsuk-list-links">
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/policy">Accessibility requirements</a></li>
+        </ul>
+        <h3 class="nhsuk-heading-xs">Guidance by role</h3>
+        <ul class="nhsuk-list nhsuk-list-links">
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/product-and-delivery">Product and delivery</a></li>
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/user-research">User research</a></li>
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/content-design">Content</a></li>
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/design">Design</a></li>
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/frontend">Frontend</a></li>
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/testing">Testing</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+{% endblock %}
