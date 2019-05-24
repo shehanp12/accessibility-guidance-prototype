@@ -1,0 +1,68 @@
+<div class="chunk-card content">
+
+    <h2 id="alternative-text-for-content-images">Use alternative text for images in content</h2>
+
+    <div class="role-label role-content">
+        Content
+    </div>
+    <div class="role-label role-testing">
+        Testing
+    </div>
+
+    <div class="chunk-content">
+        <p>People who can't see an image need some alternative to understand the content. You need to add "alt-text".</p>
+
+        <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+            How to write alt-text for content
+            </span>
+        </summary>
+        <div class="nhsuk-details__text">
+
+            <p>The content of the alt-text depends on the sort of image it is and its context. If the image is part of the main content of the page (as opposed to a <a href="/v4/accessibility/frontend#alternative-text-for-functional-images">functional image</a> like an action link), the alt-text should describe the image in a way that makes sense in the context.</p>
+
+            <p>Imagine you were reading the page out to a friend. How would you describe the image?</p>
+
+            <p>You don't need to explain that it's an image as screenreaders usually announce that. Keep alt-text to a sentence or 2. Screenreaders may not read out alt-text longer than 250 characters.</p>
+
+            <p>This is an image from the <a href="https://www.nhs.uk/conditions/bullous-pemphigoid/">NHS.UK bullous pemphigoid page</a>. It comes under a heading "Check if you have bullous pemphigoid". The alt-text is: "Lots of sore red patches with small blisters spread across white skin on a woman's chest." It explains what users can see in the picture.</p>
+
+            <div class="nhsuk-u-margin-top-8">
+            {{ image({
+                "src": "https://dummyimage.com/300x150/D8D8D8/D8D8D8",
+                "alt": "Lots of sore red patches with small blisters spread across white skin on a woman's chest.",
+                "caption": "It can affect large areas of the body or limbs."
+            }) }}
+            </div>
+
+            <p>The caption underneath the image assumes that the user can understand the image, either by seeing it or reading the alt-text. The caption shouldn't duplicate the alt-text. Instead, use it to explain why the image is there and what you want users to conclude from it - for example, how serious their symptom is or what stage their condition has reached.</p>
+
+            <p>Here are 2 more good examples. In the first one, the alt-text is "A bowl of fruit". It doesn't have a caption. Instead there's a link.</p>
+
+             <div class="nhsuk-u-margin-top-8">
+            {{ image({
+              "src": "https://dummyimage.com/300x150/D8D8D8/D8D8D8",
+              "alt": "A bowl of fruit",
+              "caption": ""
+            }) }}
+            </div>
+            <p>In the second one, the alt-text is "Small red spots on white skin". The caption explains that that's how chickenpox starts.</p>
+            <div class="nhsuk-u-margin-top-8">
+            {{ image({
+              "src": "https://dummyimage.com/300x150/D8D8D8/D8D8D8",
+              "alt": "Small red spots on white skin",
+              "caption": "1. Chickenpox starts with red spots. They can appear anywhere on the body."
+            }) }}
+            </div>
+
+            <p>If you have a complex image that you can't describe in short alt-text (such as an infographic), you need to include a longer description in some other way. You can use <a href="https://beta.nhs.uk/service-manual/styles-components-patterns/expander">an expander</a>, for example, underneath the infographic with a text explanation.</p>
+
+            <p>If your image has text which conveys its meaning, follow <a href="/v4/accessibility/frontend#alternative-text-for-functional-images">the guidance on functional images</a>. An example would be a link to a health app which includes a brand image and the name of the app. The app name says the same as the brand image, so the image doesn't need explaining.</p>
+            </div>
+            
+        </details>
+    
+    </div>
+
+</div>
