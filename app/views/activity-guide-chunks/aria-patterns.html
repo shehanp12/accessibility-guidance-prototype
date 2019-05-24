@@ -1,0 +1,47 @@
+<div class="chunk-card frontend testing">
+
+  <h2 id="aria-patterns">Use ARIA patterns</h2>
+
+  <div class="role-label role-frontend">
+      Frontend
+  </div>
+  <div class="role-label role-testing">
+      Testing
+  </div>
+
+  <div class="chunk-content">
+    <p>ARIA (Accessibility Rich Internet Applications) adds extra information that lets people who use assistive technologies know what's going on. If a component needs more description than HTML provides, you need to mark it up with an ARIA  pattern. </p>
+
+    <p>We use simple examples of ARIA in some of the service manual components, such as <a href="https://beta.nhs.uk/service-manual/styles-components-patterns/details">details</a>, <a href="https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs">breadcrumbs</a> and <a href="https://beta.nhs.uk/service-manual/styles-components-patterns/error-message">error messages</a>.</p>
+
+      <details class="nhsuk-details">
+          <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">
+              How to use ARIA patterns
+              </span>
+          </summary>
+          <div class="nhsuk-details__text">
+          
+            <p>The W3C note on <a href="https://www.w3.org/TR/using-aria/">using ARIA</a> is a good introduction.</p>
+
+            <p>If you have a complex component, check whether it fits into a defined pattern from the <a href="https://www.w3.org/TR/wai-aria-practices-1.2/">ARIA authoring practices</a>. Patterns that might be useful are:</p>
+
+            <ul>
+              <li><a href="https://www.w3.org/TR/wai-aria-practices-1.2/#accordion">accordions</a></li>
+              <li><a href="https://www.w3.org/TR/wai-aria-practices-1.2/#dialog_modal">modal dialogues</a></li>
+              <li><a href="https://www.w3.org/TR/wai-aria-practices-1.2/#slider">sliders</a></li>
+              <li><a href="https://www.w3.org/TR/wai-aria-practices-1.2/#tabpanel">tabs</a></li>
+            </ul>
+
+            <p>If you use an ARIA pattern, include the ARIA attributes, take responsibility for the keyboard interactions as part of the scripting, and test it with assistive technology.</p>
+
+            <p>Using a complex pattern adds an overhead of testing, both from a technical and a usability point of view. You need good evidence that this component is the best way of meeting the user need.</p>
+
+            <p><a href="https://beta.nhs.uk/service-manual/styles-components-patterns">The service manual components</a> are well tested. Start with them. Another useful resource for accessible components is the <a href="https://inclusive-components.design/">Inclusive components</a> collection.</p>
+
+          </div>
+      </details>
+
+    </div>
+
+</div>

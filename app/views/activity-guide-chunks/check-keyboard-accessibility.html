@@ -1,6 +1,6 @@
 <div class="chunk-card frontend testing">
 
-  <h2 id="ensure-keyboard-accessibility">Ensure keyboard accessibility</h2>
+  <h2 id="check-keyboard-accessibility">Check keyboard accessibility</h2>
 
   <div class="role-label role-frontend">
       Frontend
@@ -10,12 +10,19 @@
   </div>
 
   <div class="chunk-content">
-    <p>Keyboard accessibility is a fundamental part of enabling various input methods, including switches, speech input, and screen readers.</p>
-
+    <p>Keyboard accessibility is one of the most important parts of accessibility. It enables other input methods, including switches, speech input and screen readers.</p>
+    <p>The starting point for keyboard accessibility is to use the correct HTML for links, buttons and form controls. If you use <a href="https://beta.nhs.uk/service-manual/styles-components-patterns">components from the service manual</a>, they've been tested for keyboard accessibility.</p>
+   <div class="nhsuk-u-margin-top-8">
+            {{ image({
+              "src": "https://dummyimage.com/300x150/D8D8D8/D8D8D8",
+              "alt": "A keyboard and a web page, with a dotted line to show the way a user can tab down the page",
+              "caption": "Tabbing through the page"
+            }) }}
+    </div>
     <details class="nhsuk-details">
         <summary class="nhsuk-details__summary">
             <span class="nhsuk-details__summary-text">
-            How to test with a keyboard:
+            How to test with a keyboard
             </span>
         </summary>
         <div class="nhsuk-details__text">
@@ -25,72 +32,66 @@
             <li>tab key to progress through links and controls</li>
             <li>shift-tab to reverse</li>
             <li>enter to follow links</li>
-            <li>space to select form controls (e.g. tick boxes)</li>
-            <li>arrows for radio-buttons / tabs.</li>
+            <li>space to select form controls (such as tick boxes)</li>
+            <li>arrows for radio-buttons or tabs</li>
           </ul>
           
-          <h3 class="nhsuk-u-margin-top-6">For each page, check:</h3>
+          <h3 class="nhsuk-u-margin-top-6">For each page, check that:</h3>
 
           <div class="nhsuk-checkboxes nhsuk-u-margin-top-6">
 
             <div class="nhsuk-checkboxes__item">
               <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
               <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
-                All links, buttons and form controls can be tabbed to
+                you can tab to all links, buttons and form controls
               </label>
             </div>
 
             <div class="nhsuk-checkboxes__item">
               <input class="nhsuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="phone">
               <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
-                Non-functional elements (e.g. headings & paragraphs) cannot be tabbed to
+                you cannot tab to non-functional elements (such as headings and paragraphs) 
               </label>
             </div>
 
             <div class="nhsuk-checkboxes__item">
               <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
               <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
-                You can see where the focus is easily (link to graphic design)
+                you can see where the focus is easily [LINK]
               </label>
             </div>
 
             <div class="nhsuk-checkboxes__item">
               <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
               <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
-                The focus does not move to hidden elements
+                the focus does not move to hidden elements
               </label>
             </div>
 
             <div class="nhsuk-checkboxes__item">
               <input class="nhsuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="phone">
               <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
-                The focus does not get trapped in an element
+                the focus does not get trapped in an element
               </label>
             </div>
 
             <div class="nhsuk-checkboxes__item">
               <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
               <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
-                Scripted events (for keyboard/mouse/touch) only fire when expected
+                scripted events (for keyboard/mouse/touch) only fire when expected
               </label>
             </div>
 
             <div class="nhsuk-checkboxes__item">
               <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
               <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
-                The visual order for tabbing progress should be left-to-right, top-to-bottom
+                the visual order for tabbing progress should be left-to-right, top-to-bottom
               </label>
             </div>
 
           </div>
 
-          <div class="nhsuk-u-margin-top-8">
-            {{ image({
-              "src": "https://dummyimage.com/300x150/D8D8D8/D8D8D8",
-              "alt": "Placeholder image",
-              "caption": "Caption"
-            }) }}
-          </div>
+         
 
         
         </div>
