@@ -1,0 +1,230 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v4">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v4/accessibility">Accessibility</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v4/accessibility">Back to Accessibility</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <h1>Frontend</h1>
+    <p class="nhsuk-body-l nhsuk-u-margin-bottom-8">What front end developers need to do about accessibility.</p>
+
+  </div>
+
+</div>
+
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <div class="nhsuk-expander-group">
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Set page titles
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Each page title should be unique, descriptive and concise. It's the first thing a screenreader will read out when the user lands on a page. It's also the link that shows in search results. In both cases a good page title helps users find a page and switch between tabs.</p>
+          <p>Best practice is generally: Page name | Section – Sitename</p>
+          <p>For example: Achalasia | Health A to Z – NHS</p>
+          <p>The first element (here "Achalasia") is the main heading of the page.</p>
+          <p>If you can, use templates to keep things consistent and use your content management system to generate everything after the pipe symbol.</p>
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Define colour contrast
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+
+          <h3 class="nhsuk-heading-xs">Text contrast</h3>
+
+          <p>Using colours that contrast well makes it much easier for people to read content comfortably. Ensure the colour contrast between the text colour and background colour meets the following minimum ratio:</p>
+                  
+          <h5>Contrast ratio</h5>
+          <ul>
+              <li>Small text (4.5:1) – text smaller than 24px or 19px if bold.</li>
+              <li>Large text (3:1) – text larger than 24px or 19px if bold.</li>
+          </ul>
+
+          <h5 class="nhsuk-u-margin-top-6">Example</h5>
+
+          {{ image({
+          "src": "https://dummyimage.com/300x150/D8D8D8/D8D8D8",
+          "alt": "Placeholder image",
+          "caption": "Text colour contrast"
+          }) }}
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Check keyboard accessibility
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+
+          <h3 class="nhsuk-heading-xs">How to test with a keyboard:</h3>
+          <ul>
+            <li>tab key to progress through links and controls</li>
+            <li>shift-tab to reverse</li>
+            <li>enter to follow links</li>
+            <li>space to select form controls (such as tick boxes)</li>
+            <li>arrows for radio-buttons or tabs</li>
+          </ul>
+          
+          <h3 class="nhsuk-heading-xs">For each page, check that:</h3>
+
+          <div class="nhsuk-checkboxes">
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
+                you can tab to all links, buttons and form controls
+              </label>
+            </div>
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="phone">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
+                you cannot tab to non-functional elements (such as headings and paragraphs) 
+              </label>
+            </div>
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+                you can see where the focus is easily [LINK]
+              </label>
+            </div>
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
+                the focus does not move to hidden elements
+              </label>
+            </div>
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="phone">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
+                the focus does not get trapped in an element
+              </label>
+            </div>
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+                scripted events (for keyboard/mouse/touch) only fire when expected
+              </label>
+            </div>
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
+                the visual order for tabbing progress should be left-to-right, top-to-bottom
+              </label>
+            </div>
+
+          </div>
+
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Test zooming and text sizing
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+
+          <p>Placeholder</p>
+
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Use ARIA patterns
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+
+          <p>Placeholder</p>
+
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Use alternative text for functional images
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+
+          <p>Use alternative text for functional images</p>
+
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Set the language of the content
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+
+          <p>Set the language of the content</p>
+
+        </div>
+      </details>
+
+    </div>
+
+  </div>
+
+  <div class="nhsuk-grid-column-one-third">
+    <div class="app-u-border-top">
+      <h2 class="nhsuk-heading-s">Accessibility</h2>
+      <ul class="nhsuk-list nhsuk-list-links">
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/what-all-NHS-services-need-to-do">What all NHS services need to do</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/how-to-make digital-services-accessible">How to make digital services accessible</a></li>
+      </ul>
+      <h3 class="nhsuk-heading-xs">Guidance by role</h3>
+      <ul class="nhsuk-list nhsuk-list-links">
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/product-and-delivery">Product and delivery</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/user-research">User research</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/content-design">Content</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/design">Design</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/testing">Testing</a></li>
+      </ul>
+    </div>
+  
+  </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <h1>Accessibility</h1>
+			<p class="nhsuk-body-l">How to make your service work for everyone.</p>
+			
+
+			<div class="nhsuk-grid-row nhsuk-u-margin-top-8">
+
+				<div class="nhsuk-grid-column-one-third">
+					<h3 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/v4/accessibility/what-all-NHS-services-need-to-do">What all NHS services have to do</a></h3>
+					<p>The law and the standard we aim for.</p>
+        </div>
+
+        <div class="nhsuk-grid-column-one-third">
+					<h3 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/v4/accessibility/how-to-make-digital-services-accessible">How to make digital services accessible</a></h3>
+					<p>Our approach to accessibility.</p>
+        </div>
+				
+        <div class="nhsuk-grid-column-one-third">
+					<h3 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/v4/accessibility/getting-started">Getting started</a></h3>
+					<p>Learning about accessibility.</p>
+			  </div>
+
+			</div>
+
+			<div class="nhsuk-grid-row nhsuk-u-margin-top-6">
+
+				<div class="nhsuk-grid-column-two-thirds">
+
+					<h2 class="nhsuk-heading-m">Guidance by role</h2>
+					<p>What people in different roles in an NHS digital team need to do and think about.</p>
+						<ul class="nhsuk-list nhsuk-list-links">
+						<li class="nhsuk-heading-xs"><a href="/v5/accessibility/product-and-delivery">Product and delivery</a></li>
+						<li class="nhsuk-heading-xs"><a href="/v5/accessibility/user-research">User research</a></li>
+						<li class="nhsuk-heading-xs"><a href="/v5/accessibility/content-design">Content</a></li>
+						<li class="nhsuk-heading-xs"><a href="/v5/accessibility/design">Design</a></li>
+						<li class="nhsuk-heading-xs"><a href="/v5/accessibility/frontend">Frontend</a></li>
+						<li class="nhsuk-heading-xs"><a href="/v5/accessibility/testing">Testing</a></li>
+					</ul>		
+
+					<h2 class="nhsuk-heading-m nhsuk-u-margin-top-8">Get in touch</h2>
+					<p>Join us on the <a href="#">NHS digital service manual Slack workspace</a> or email the standards team at <a href="#">service-manual@nhs.net</a>.</p>
+
+				</div>
+
+			</div>
+
+    </div>  
+
+  </div>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v4">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v4/accessibility">Accessibility</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v4/accessibility">Back to Accessibility</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <h1>Product and delivery</h1>
+    <p class="nhsuk-body-l nhsuk-u-margin-bottom-8">What product and delivery managers need to do about accessibility.</p>
+  
+  </div>
+
+</div>
+
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <div>
+      {% include "activity-guide-chunks/responsibilities.html" %}
+      {% include "activity-guide-chunks/starting-new-project.html" %}
+      {% include "activity-guide-chunks/monitor-and-record-your-work.html" %}
+      {% include "activity-guide-chunks/check-accessibility-is-done.html" %}
+      {% include "activity-guide-chunks/accessibility-statement.html" %}
+    </div>
+    
+  </div>
+
+  <div class="nhsuk-grid-column-one-third">
+    <div class="app-u-border-top">
+      <h2 class="nhsuk-heading-s">Accessibility</h2>
+      <ul class="nhsuk-list nhsuk-list-links">
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/what-all-nhs-services-need-to-do">What all NHS services need to do</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/how-to-make-digital-services-accessible">How to make digital services accessible</a></li>
+      </ul>
+      <h3 class="nhsuk-heading-xs">Guidance by role</h3>
+      <ul class="nhsuk-list nhsuk-list-links">
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/user-research">User research</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/content-design">Content</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/design">Design</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/frontend">Frontend</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/testing">Testing</a></li>
+      </ul>
+    </div>
+  
+  </div>
+
+</div>
+{% endblock %}

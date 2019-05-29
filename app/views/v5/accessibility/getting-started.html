@@ -1,0 +1,75 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v4">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v4/accessibility">Accessibility</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v4/accessibility">Back to Accessibility</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>Getting started</h1>
+      <p class="nhsuk-body-l nhsuk-u-margin-bottom-7">Learning about accessibility.</p>  
+
+    </div>
+
+  </div>
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h2>Book an accessibility training session</h2>
+      <p>[WHAT DO WE WANT TO SAY ABOUT THIS?]</p> 
+
+      <h2>Book a session in an empathy lab</h2>
+      <p>Public sector organisations can <a href="https://docs.google.com/forms/d/e/1FAIpQLSdMU-SXWtBLcq9y3fdMXPNDHKIVwlcnXwveUEtJpgYw9zEOGg/viewform">book a visit to the Government Digital Service (GDS) lab</a>.</p>
+      <p>[WHAT DO WE WANT TO SAY ABOUT THE NHS DIGITAL LAB?]
+
+      <h2>Join an accessibility community</h2>
+      <p>You can join the <a href="https://www.gov.uk/service-manual/communities/accessibility-community">GOV.UK accessibility community</a> or talk to NHS colleagues on [DO WE WANT TO SET UP AN ACCESSIBILITY CHANNEL ON THE PUBLIC SLACK CHANNEL?]
+    
+     <h2>Read more about it</h2>
+     <ul>
+      <li><a href="https://accessibility.blog.gov.uk/category/accessibility-and-me/">Accessibility and me</a> (GOV.UK blogs) - a series of interviews with people with access needs</li>
+      <li><a href="https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/">Dos and don'ts of designing for accessibility</a> (GOV.UK blog) with GOV.UK posters about designing inclusive services</li>
+      <li><a href="https://accessibility.blog.gov.uk/">GOV.UK accessibility blog</a></li>
+      <li><a href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles">Understanding disabilities and impairments: user profiles</a> (GOV.UK) - a set of profiles highlighting common barriers users face when accessing digital services [DO WE HAVE ANY NHS.UK ONES?]</li>
+      <li><a href="https://www.w3.org/WAI/perspective-videos/">Web accessibility perspectives</a> (W3C) - a series of videos about how accessible design can help people with disabilities</li>
+    </ul>
+</div>
+
+    <div class="nhsuk-grid-column-one-third">
+      <div class="app-u-border-top">
+        <h2 class="nhsuk-heading-s">Accessibility</h2>
+        <ul class="nhsuk-list nhsuk-list-links">
+            <li class="nhsuk-body-s"><a href="/v4/accessibility/what-all-nhs-services-need-to-do">What all NHS services need to do</a></li>
+            <li class="nhsuk-body-s"><a href="/v4/accessibility/how-to-make-digital-services-accessible">How to make digital services accessible</a></li>
+        </ul>
+        <h3 class="nhsuk-heading-xs">Guidance by role</h3>
+        <ul class="nhsuk-list nhsuk-list-links">
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/product-and-delivery">Product and delivery</a></li>
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/user-research">User research</a></li>
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/content-design">Content</a></li>
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/design">Design</a></li>
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/frontend">Frontend</a></li>
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/testing">Testing</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+{% endblock %}
