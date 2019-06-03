@@ -10,29 +10,42 @@
     </div>
 
     <div class="chunk-content">
-        <p>Some images are functional, like an <a href="https://beta.nhs.uk/service-manual/styles-components-patterns/action-link">action link</a>.</p>
+        <p>Some images are functional, like an <a href="https://beta.nhs.uk/service-manual/styles-components-patterns/action-link">action link</a>. If people can't see the image, they need an alternative in the form of "alt-text".</p>
+
+        <h3>Images with text labels</h3>
+        <p>If the image has a text label that conveys its meaning, the alt-text should be "null". The attribute should be present, but empty.</p>
 
         <details class="nhsuk-details">
         <summary class="nhsuk-details__summary">
             <span class="nhsuk-details__summary-text">
-            How to write alt-text for functional images
+            Examples
             </span>
         </summary>
         <div class="nhsuk-details__text">
-        <p>If the image has a text label that conveys its meaning, the alt-text of the image should be "null". The attribute should be present, but empty.</p>
-        <p>An example would be a link to a health app which includes a brand image and the name of the app. The app name says the same as the brand image so the image doesn't need explaining.</p>
+       
+        <p>An example would be a link to a health app which includes a brand image and the name of the app. The app name says the same as the brand image, so the image doesn't need explaining.</p>
 
         <p>For a standard image, use: <code><img src="image.jpg" alt=""></code></p>
 
         <p>For inline SVG images, use: <code><svg aria-hidden="true"></code>.</p> 
 
-        <p>If the image doesn't have any text, you must include alt-text. For example, the play button on a media player or carousel [MENTION?]: <code><img src="play.jpg" alt="Play"></code>.[INSERT PLAY BUTTON IMAGE]</p> 
-
+         <p>If you have an SVG in a link, use the <a href="https://beta.nhs.uk/service-manual/styles-components-patterns/action-link">action link</a> pattern, where there is hidden text in the link and the SVG is hidden from assistive technology.</p>
+         </div>
+        </details>
+         
+        <h3>Image that don't have text</h3>
+        <p>You must include alt-text. For example, the play button on a media player or carousel: <code><img src="play.jpg" alt="Play"></code>.[INSERT PLAY BUTTON IMAGE]</p> 
+        <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+            Examples
+            </span>
+        </summary>
+        <div class="nhsuk-details__text">
         <p>For inline SVG images, use: <code><svg ...><title>Play</title></code></p>
-
-        <p>If you have an SVG in a link, use the <a href="https://beta.nhs.uk/service-manual/styles-components-patterns/action-link">action link</a> pattern, where there is hidden text in the link and the SVG is hidden from assistive technology.</p>
-        
-        <p>The alt text (or SVG title) of a functional image should say what the function is, rather than describing what it looks like. For example, "Play" for a video, not "triangle", and "search", not "magnifying glass".</p>
+      
+        <p>The alt text (or SVG title) of a functional image should say what it does, rather than what it looks like. For example, "Play" for a video, not "Triangle", and "Search", not "Magnifying glass".</p>
+        </div>
         </details>
     
     </div>

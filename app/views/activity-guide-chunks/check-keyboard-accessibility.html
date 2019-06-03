@@ -11,14 +11,8 @@
 
   <div class="chunk-content">
     <p>Keyboard accessibility is one of the most important parts of accessibility. It enables other input methods, including switches, speech input and screen readers.</p>
-    <p>The starting point for keyboard accessibility is to use the correct HTML for links, buttons and form controls. If you use <a href="https://beta.nhs.uk/service-manual/styles-components-patterns">components from the service manual</a>, they've been tested for keyboard accessibility.</p>
-   <div class="nhsuk-u-margin-top-8">
-            {{ image({
-              "src": "https://dummyimage.com/300x150/D8D8D8/D8D8D8",
-              "alt": "A keyboard and a web page, with a dotted line to show the way a user can tab down the page",
-              "caption": "Tabbing through the page"
-            }) }}
-    </div>
+    <p>The starting point for keyboard accessibility is to use the correct HTML for links, buttons and form controls. Use <a href="https://beta.nhs.uk/service-manual/styles-components-patterns">components from the service manual</a>, if you can. They've already been tested for keyboard accessibility.</p>
+  
     <details class="nhsuk-details">
         <summary class="nhsuk-details__summary">
             <span class="nhsuk-details__summary-text">
@@ -26,20 +20,26 @@
             </span>
         </summary>
         <div class="nhsuk-details__text">
-
-          <h3 class="nhsuk-u-margin-top-6">How to test with a keyboard:</h3>
+        <p>Check that you can use:</p>
           <ul>
-            <li>tab key to progress through links and controls</li>
+            <li>tab to progress through links and controls</li>
             <li>shift-tab to reverse</li>
             <li>enter to follow links</li>
             <li>space to select form controls (such as tick boxes)</li>
             <li>arrows for radio-buttons or tabs</li>
           </ul>
+          </div>
+          </details>
           
-          <h3 class="nhsuk-u-margin-top-6">For each page, check that:</h3>
+    <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+           Check list for each page
+            </span>
+        </summary>
 
           <div class="nhsuk-checkboxes nhsuk-u-margin-top-6">
-
+          <p>Check that:</p>
             <div class="nhsuk-checkboxes__item">
               <input class="nhsuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="email">
               <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
@@ -57,7 +57,7 @@
             <div class="nhsuk-checkboxes__item">
               <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
               <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
-                you can see where the focus is easily [LINK]
+                you can easily see where the <a href="/v4/accessibility/design#define-focus-styles">focus</a> is
               </label>
             </div>
 
@@ -78,23 +78,19 @@
             <div class="nhsuk-checkboxes__item">
               <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
               <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
-                scripted events (for keyboard/mouse/touch) only fire when expected
+                scripted events (for keyboard, mouse and touch) only fire when expected
               </label>
             </div>
 
             <div class="nhsuk-checkboxes__item">
               <input class="nhsuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="text message">
               <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-3">
-                the visual order for tabbing progress should be left-to-right, top-to-bottom
+                the visual order for tabbing progress is left-to-right and top-to-bottom
               </label>
             </div>
 
           </div>
 
-         
-
-        
-        </div>
       </details>
     
     </div>
