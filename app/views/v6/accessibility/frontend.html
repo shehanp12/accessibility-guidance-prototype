@@ -1,0 +1,69 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v4">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v4/accessibility">Accessibility</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v4/accessibility">Back to Accessibility</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <h1>Frontend</h1>
+    <p class="nhsuk-body-l nhsuk-u-margin-bottom-8">What frontend developers need to do about accessibility.</p>
+
+  </div>
+
+</div>
+
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <div>
+      {% include "activity-guide-chunks/check-keyboard-accessibility.html" %}
+      {% include "activity-guide-chunks/setting-page-titles.html" %}
+      {% include "activity-guide-chunks/setting-language-of-the-content.html" %}
+      {% include "activity-guide-chunks/aria-patterns.html" %}
+      {% include "activity-guide-chunks/discuss-custom-components.html" %}
+      {% include "activity-guide-chunks/test-text-sizing-and-zooming.html" %}
+      {% include "activity-guide-chunks/alternative-text-for-functional-images.html" %}
+      {% include "activity-guide-chunks/make-video-and-multimedia-accessible.html" %}
+    </div>
+
+  </div>
+
+  <div class="nhsuk-grid-column-one-third">
+    <div class="app-u-border-top">
+      <h2 class="nhsuk-heading-s">Accessibility</h2>
+      <ul class="nhsuk-list nhsuk-list-links">
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/what-all-NHS-services-need-to-do">What all NHS services need to do</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/how-to-make-digital-services-accessible">How to make digital services accessible</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/getting-started">Getting started</a></li>
+      </ul>
+      <h3 class="nhsuk-heading-xs">Guidance for different activities</h3>
+      <ul class="nhsuk-list nhsuk-list-links">
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/product-and-delivery">Product and delivery</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/user-research">User research</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/content-design">Content</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/design">Design</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/testing">Testing</a></li>
+      </ul>
+    </div>
+  
+  </div>
+
+</div>
+{% endblock %}

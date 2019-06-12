@@ -1,0 +1,93 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v4">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v4/accessibility">Accessibility</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v4/accessibility">Back to Accessibility</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <h1>Testing</h1>
+    <p class="nhsuk-body-l nhsuk-u-margin-bottom-8">What testers and quality assurers need to do about accessibility.</p>
+
+  </div>
+
+</div>
+
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <div>
+      {% include "activity-guide-chunks/understand-types-of-testing.html" %}
+      {% include "activity-guide-chunks/orientation-not-locked.html" %}
+      {% include "activity-guide-chunks/consistent-navigation.html" %}
+      {% include "activity-guide-chunks/setting-language-of-the-content.html" %}  
+      {% include "activity-guide-chunks/setting-page-titles.html" %}
+      {% include "activity-guide-chunks/landmarks.html" %}
+      {% include "activity-guide-chunks/define-skip-links.html" %}
+      {% include "activity-guide-chunks/use-headings-correctly.html" %}
+      {% include "activity-guide-chunks/check-keyboard-accessibility.html" %}
+      {% include "activity-guide-chunks/test-text-sizing-and-zooming.html" %}
+      {% include "activity-guide-chunks/aria-patterns.html" %}
+      {% include "activity-guide-chunks/labels.html" %}
+      {% include "activity-guide-chunks/write-good-link-and-button-names.html" %}
+      {% include "activity-guide-chunks/error-messages.html" %}
+      {% include "activity-guide-chunks/check-colour-contrast.html" %}
+      {% include "activity-guide-chunks/colour-and-location.html" %}
+      {% include "activity-guide-chunks/alternative-text-for-content-images.html" %}
+      {% include "activity-guide-chunks/alternative-text-for-functional-images.html" %}
+      {% include "activity-guide-chunks/make-video-and-multimedia-accessible.html" %}
+      {% include "activity-guide-chunks/time-to-read-and-act.html" %}
+      {% include "activity-guide-chunks/autocomplete.html" %}
+      {% include "activity-guide-chunks/flashes-and-animation.html" %}     
+      {% include "activity-guide-chunks/status-updates-away-from-current-focus.html" %}
+      {% include "activity-guide-chunks/do-not-add-keyboard-shortcuts.html" %}
+      {% include "activity-guide-chunks/do-not-override-visible-labels.html" %}
+      {% include "activity-guide-chunks/do-not-use-down-events-for-links-and-buttons.html" %}
+      {% include "activity-guide-chunks/do-not-include-text-in-images.html" %}
+      {% include "activity-guide-chunks/do-not-trigger-pop-ups-by-hover-or-focus.html" %}
+      {% include "activity-guide-chunks/do-not-play-audio-automatically.html" %}      
+      {% include "activity-guide-chunks/do-not-rely-on-touch-gestures.html" %}
+      {% include "activity-guide-chunks/do-not-rely-on-motion-sensors.html" %}
+      
+      
+    </div>
+
+  </div>
+
+  <div class="nhsuk-grid-column-one-third">
+    <div class="app-u-border-top">
+      <h2 class="nhsuk-heading-s">Accessibility</h2>
+      <ul class="nhsuk-list nhsuk-list-links">
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/what-all-NHS-services-need-to-do">What all NHS services need to do</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/how-to-make-digital-services-accessible">How to make digital services accessible</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/getting-started">Getting started</a></li>
+      </ul>
+      <h3 class="nhsuk-heading-xs">Guidance for different activities</h3>
+      <ul class="nhsuk-list nhsuk-list-links">
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/product-and-delivery">Product and delivery</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/user-research">User research</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/content-design">Content</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/design">Design</a></li>
+        <li class="nhsuk-body-s"><a href="/v4/accessibility/frontend">Frontend</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
