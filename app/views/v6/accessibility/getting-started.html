@@ -1,0 +1,85 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v4">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v4/accessibility">Accessibility</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/v4/accessibility">Back to Accessibility</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>Getting started with accessibility</h1>
+      <p class="nhsuk-body-l nhsuk-u-margin-bottom-7">Things you can do to learn about accessibility.</p>  
+
+    </div>
+
+  </div>
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h2>Book an accessibility training session</h2>
+      <p>The Government Digital Service (GDS) runs introductions to accessibility for people who work in public sector services.</p>
+      <p><a href="https://designnotes.blog.gov.uk/events-and-training-in-the-user-centred-design-community/">Find a cross-government training event</a>. </p> 
+      <h2>Learn on your own</h2>
+      <p>You can learn a lot through reading blogs and watching videos. There are some good resources online.</p>
+      <details class="nhsuk-details">
+            <summary class="nhsuk-details__summary">
+                <span class="nhsuk-details__summary-text">
+               Online resources
+                </span>
+            </summary>
+            <div class="nhsuk-details__text">
+      <ul>
+        <li><a href="https://accessibility.blog.gov.uk/category/accessibility-and-me/">Accessibility and me</a> (GOV.UK blogs) - a series of interviews with people with access needs</li>
+        <li><a href="https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/">Dos and don'ts of designing for accessibility</a> (GOV.UK blog) with GOV.UK posters about designing inclusive services</li>
+        <li><a href="https://accessibility.blog.gov.uk/">GOV.UK accessibility blog</a></li>
+        <li><a href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles">Understanding disabilities and impairments: user profiles</a> (GOV.UK) - a set of profiles highlighting common barriers users face when accessing digital services. Please share any accessibility user profiles for NHS services on <a href="https://nhs-service-manual.slack.com/join/shared_invite/enQtNTIyOTEyNjU3NDkyLWUwOWM5MWY5MGRhYTYxZmY4ZWI0NDA1N2NhNTRiMGY3MTQxNjk5YTc3ZTAzMTA4YmE3ZDAxYmQ3MTQxNDgzOTQ">our public Slack channel</a>.</li>
+        <li><a href="https://www.w3.org/WAI/perspective-videos/">Web accessibility perspectives</a> (W3C) - a series of videos about how accessible design can help people with disabilities</li>
+      </ul>
+      </div>
+      </details>
+      <h2>Book a session in an accessibility lab</h2>
+      <p>An accessibility lab will give you hands-on experience of some of the technologies that people use with online services. Some labs also have goggles that simulate visual impairments and headphones to simulate hearing loss.</p>
+      <p>Public sector organisations can <a href="https://docs.google.com/forms/d/e/1FAIpQLSdMU-SXWtBLcq9y3fdMXPNDHKIVwlcnXwveUEtJpgYw9zEOGg/viewform">book a visit to the GDS "empathy" lab</a>. NHS Digital is setting up its own accessibility lab. We'll post details here when it's ready.</p>
+
+      <h2>Talk to other people with an interest in accessibility</h2>
+      <p>Join the <a href="https://www.gov.uk/service-manual/communities/accessibility-community">GOV.UK accessibility community</a> or talk to NHS colleagues on our <a href="https://nhs-service-manual.slack.com/join/shared_invite/enQtNTIyOTEyNjU3NDkyLWUwOWM5MWY5MGRhYTYxZmY4ZWI0NDA1N2NhNTRiMGY3MTQxNjk5YTc3ZTAzMTA4YmE3ZDAxYmQ3MTQxNDgzOTQ">public Slack workspace</a> to get advice and support, stay up to date and share examples.</p>
+     
+</div>
+
+    <div class="nhsuk-grid-column-one-third">
+      <div class="app-u-border-top">
+        <h2 class="nhsuk-heading-s">Accessibility</h2>
+        <ul class="nhsuk-list nhsuk-list-links">
+            <li class="nhsuk-body-s"><a href="/v4/accessibility/what-all-nhs-services-need-to-do">What all NHS services need to do</a></li>
+            <li class="nhsuk-body-s"><a href="/v4/accessibility/how-to-make-digital-services-accessible">How to make digital services accessible</a></li>
+        </ul>
+        <h3 class="nhsuk-heading-xs">Guidance for different activities</h3>
+        <ul class="nhsuk-list nhsuk-list-links">
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/product-and-delivery">Product and delivery</a></li>
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/user-research">User research</a></li>
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/content-design">Content</a></li>
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/design">Design</a></li>
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/frontend">Frontend</a></li>
+          <li class="nhsuk-body-s"><a href="/v4/accessibility/testing">Testing</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+{% endblock %}

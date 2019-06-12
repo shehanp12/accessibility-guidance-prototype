@@ -1,0 +1,64 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+  Accessibility guidance - page
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      	<h1>Accessibility</h1>
+		<p class="nhsuk-body-l">How to make your service work for everyone.</p>
+			
+
+			<div class="nhsuk-grid-row nhsuk-u-margin-top-8">
+
+				 <div class="nhsuk-grid-column-full">
+
+				 	<h2>What everyone needs to know</h2>
+
+					<ul class="nhsuk-list">
+						<li><a href="/v4/accessibility/what-all-NHS-services-need-to-do">What all NHS services need to do about accessibility</a></li>
+						<li><a href="/v4/accessibility/how-to-make-digital-services-accessible">How to make digital services accessible</a></li>
+						<li><a href="/v4/accessibility/getting-started">Getting started with accessibility</a></li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="nhsuk-grid-row nhsuk-u-margin-top-6">
+
+				<div class="nhsuk-grid-column-two-thirds">
+
+					<h2>Guidance for different activities</h2>
+					<p>What people in different roles in digital teams in the NHS need to do and think about.</p>
+						<ul class="nhsuk-list">
+						<li><a href="/v4/accessibility/product-and-delivery">Product and delivery</a></li>
+						<li><a href="/v4/accessibility/user-research">User research</a></li>
+						<li><a href="/v4/accessibility/content-design">Content</a></li>
+						<li><a href="/v4/accessibility/design">Design</a></li>
+						<li><a href="/v4/accessibility/frontend">Frontend</a></li>
+						<li><a href="/v4/accessibility/testing">Testing</a></li>
+					</ul>		
+
+					<h2 class="nhsuk-heading-m nhsuk-u-margin-top-8">Get in touch</h2>
+					<p>Join us on the <a href="#">NHS digital service manual Slack workspace</a> or email the standards team at <a href="#">service-manual@nhs.net</a>.</p>
+
+				</div>
+
+			</div>
+
+    </div>  
+
+  </div>
+{% endblock %}
