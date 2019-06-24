@@ -18,6 +18,7 @@
 
                 <ul>
                     <li>Ideally link text should match the heading of the target page. If  the target page has the heading "Sleep and tiredness", that's good link text.</li>
+                    <li>If the target page heading is too long, shorten it but use words from it so that users can predict where the link will take them.</li>
                     <li>Avoid ambiguous phrases such as "click here", "read more" and "find out more". It's OK to say: "Read more about <u>how to deal with stress</u>."</li>
                     <li>If links open in a new window, say this in the link phrase. For example, "Link name (opens in new window)".</li>
                     <li>If the link goes to a document, include the file type and size in the link phrase. For example: "Link name (PDF, 200KB)".</li>
@@ -32,8 +33,26 @@
                 </span>
             </summary>
             <div class="nhsuk-details__text">
-        <p>You can use the same text for multiple links when they're in a good structure. For example, you could have "Edit" links at the end of each row of a table so long as the table row headings together with the link text make the meaning clear.</p>
-        <p>Here is a WCAG 2.1 example of <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H79">using a table structure for good link names</a>.</p>
+        <p>You can use the same text for multiple links when they're in a good structure. The table row headings together with the link text must make the meaning clear.</p>
+        <p>Here's an example: a list of form fields in a table, with "Change" links at the end of each row.</p>
+
+        <div class="nhsuk-table-responsive">
+            <table class="nhsuk-table">
+                <caption class="nhsuk-table__caption">Personal details</caption>
+                <tbody class="nhsuk-table__body">
+                <tr class="nhsuk-table__row">
+                    <td class="nhsuk-table__cell">Name</td>
+                    <td class="nhsuk-table__cell">Jo Smith</td>
+                    <td class="nhsuk-table__cell "><a href="#">Change</a></td>
+                </tr>
+                <tr class="nhsuk-table__row">
+                    <td class="nhsuk-table__cell">Date of birth</td>
+                    <td class="nhsuk-table__cell ">27 February 1982</td>   
+                    <td class="nhsuk-table__cell "><a href="#">Change</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     </details>
     </div>
